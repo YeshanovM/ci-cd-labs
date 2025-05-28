@@ -1,0 +1,9 @@
+# Terraform state
+*.tfstate
+*.tfstate.backup
+
+# Terraform cache
+.terraform/
+
+# OS files
+.DS_Store
