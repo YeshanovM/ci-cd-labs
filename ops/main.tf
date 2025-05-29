@@ -1,3 +1,12 @@
+terraform {
+  backend "s3" {
+    bucket         = "tfstate-ci-cd-labs"
+    key            = "infra/terraform.tfstate"
+    region         = "eu-north-1"
+    encrypt        = true
+  }
+}
+
 provider "aws" {
     region = "eu-north-1"
   }
